@@ -1,0 +1,30 @@
+  {
+    "name": "addapptation",
+    "version": "1.0",
+    "description": "Free apps that redesigns Salesforce.com into a simple, intuitive experience",
+    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "options_page": "options.html",
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+	"chrome_url_overrides" : {
+		"newtab": "/addapptation.html"
+	},
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/logo_36x36.png",
+        "32": "images/logo_36x36.png",
+        "48": "images/logo_48x48.png",
+        "128": "images/logo_120x120.png"
+      }
+    },
+    "icons": {
+      "16": "images/logo_36x36.png",
+      "32": "images/logo_36x36.png",
+      "48": "images/logo_48x48.png",
+      "128": "images/logo_120x120.png"
+    },
+    "manifest_version": 2
+  }
