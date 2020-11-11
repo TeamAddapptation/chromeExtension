@@ -216,7 +216,7 @@ let tilesBlock = {
    ]
  };
 
- granite_tiles(tilesBlock, jsonTheme);
+//  granite_tiles(tilesBlock, jsonTheme);
 function getWeather() {
     let temperature = document.getElementById("a__ce_temp");
 
