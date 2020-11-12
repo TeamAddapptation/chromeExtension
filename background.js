@@ -1,5 +1,4 @@
 'use strict';
-
 chrome.runtime.onInstalled.addListener(function() {
 	const store_apps = [{url: 'https://addapptation.com', id: '', name: 'test app 1'}, {url: 'https://addapptation.com/admins', id: '', name: 'test app 2'}];
 	console.log("before_apps_set: " + store_apps);
