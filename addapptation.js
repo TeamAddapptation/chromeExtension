@@ -8,6 +8,11 @@ function time(){
 time();
 setInterval(time,1000);
 /*---------------------------------------------
+iFrame CSS
+---------------------------------------------*/
+let iframeLogo = document.getElementsByClassName('addapptation_menu_icon');
+console.log(iframeLogo);
+/*---------------------------------------------
 Background Image
 ---------------------------------------------*/
 const numItemsToGenerate = 20; //how many gallery items you want on the screen

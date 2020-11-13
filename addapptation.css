@@ -83,6 +83,7 @@ Main Content
 #a__ce_iframe{
 	border: 0;
 	width: 500px;
+	z-index: 10;
 	height: 470px;
 }
 #a__ce_grid_tab_menu.active{
@@ -138,7 +139,7 @@ Main Content
 	margin-top: 50px;
 	font-size: 2.25rem;
 	width: 80vw;
-	z-index: 5;
+	z-index: 1;
 }
 #a__micros{
 	width: 80vw;
