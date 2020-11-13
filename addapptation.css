@@ -135,8 +135,8 @@ Main Content
 	display: flex;
 	justify-content: center;
 	text-align: center;
+	margin-top: 50px;
 	font-size: 2.25rem;
-	margin: 0 auto;
 	width: 80vw;
 	z-index: 5;
 }
