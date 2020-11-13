@@ -10,8 +10,14 @@ setInterval(time,1000);
 /*---------------------------------------------
 iFrame CSS
 ---------------------------------------------*/
-let iframeLogo = document.getElementsByClassName('addapptation_menu_icon');
-console.log(iframeLogo);
+function iframeCss() {
+   var iframe = document.getElementById('a__ce_iframe');
+   if (iframe && iframe.contentWindow) {
+      let content = document.getElementById('g__action-wrapper');
+      content.style.backgroundColor = 'red';
+   }
+}
+
 /*---------------------------------------------
 Background Image
 ---------------------------------------------*/
@@ -69,12 +75,16 @@ Show All
 /*---------------------------------------------
 Share Modal
 ---------------------------------------------*/
-document.getElementById('a__ce_share_btn').addEventListener('click', function() {
-  document.getElementById('a__ce_share').style.display = "flex";
-});
-document.getElementById('a__ce_close_btn').addEventListener('click', function() {
-  document.getElementById('a__ce_share').style.display = "none";
-});
+let share_btn = document.getElementById('a__ce_share_btn');
+let share_modal = document.getElementById('a__ce_share');
+let close_btn = document.getElementById('a__ce_close_btn')
+share_btn.onclick = function(){
+   share_modal.classList.toggle('active');
+}
+close_btn.onclick = function(){
+   share_modal.classList.toggle('active');
+}
+
 /*---------------------------------------------
 Tab Grid Menu
 ---------------------------------------------*/
@@ -82,6 +92,7 @@ let grid = document.getElementById('a__ce_grid_icon');
 let grid_menu = document.getElementById('a__ce_grid_tab_menu');
 
 grid.onclick = function() {
+   grid.classList.toggle('active');
    grid_menu.classList.toggle('active');
 }
 
