@@ -3,7 +3,7 @@
     "version": "1.0",
     "homepage_url": "https://addapptation.com/",
     "description": "Free apps that redesigns Salesforce.com into a simple, intuitive experience",
-    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "permissions": ["storage"],
     "options_page": "options.html",
     "background": {
       "scripts": ["background.js"],
